@@ -10,9 +10,12 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import { BookList } from '../components/BookList/BookList';
-import { Suspense } from 'react';
+import { Suspense, lazy } from 'react';
 import { withHeader } from '../layouts/Header/Header';
-import { CreateBookModal } from '../components/CreateBook/CreateBookModal';
+
+const CreateBookModal = lazy(
+  () => import('../components/CreateBook/CreateBookModal/CreateBookModal'),
+);
 
 const Home = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

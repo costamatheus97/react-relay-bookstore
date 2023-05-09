@@ -12,7 +12,7 @@ import {
 import { useCallback } from 'react';
 import { createFragmentContainer, useMutation } from 'react-relay';
 import { graphql } from 'react-relay';
-import TrashCanIcon from '../../assets/TrashCanIcon';
+import TrashCanIcon from '../../../assets/TrashCanIcon';
 import { BookListItem_book$data } from './__generated__/BookListItem_book.graphql';
 import { BookListItem_Mutation } from './__generated__/BookListItem_Mutation.graphql';
 

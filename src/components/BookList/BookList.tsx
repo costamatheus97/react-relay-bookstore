@@ -1,7 +1,7 @@
 import { usePreloadedQuery, loadQuery } from 'react-relay/hooks';
 import { graphql } from 'react-relay';
 
-import BookListItem from './BookListItem';
+import BookListItem from './BookListItem/BookListItem';
 import { BookList_Query } from './__generated__/BookList_Query.graphql';
 import { RelayEnvironment } from '../../RelayEnvironment';
 import { Box, Text, VStack, SimpleGrid } from '@chakra-ui/react';
