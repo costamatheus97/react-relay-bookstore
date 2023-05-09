@@ -6,7 +6,7 @@ import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 
 import { CreateBookForm_Mutation } from './__generated__/CreateBookForm_Mutation.graphql';
-import { TextInput } from '../TextInput/TextInput';
+import { TextInput } from '../../TextInput/TextInput';
 
 const formSchema = z.object({
   title: z.string().min(1, { message: 'Title is required' }),
@@ -35,7 +35,7 @@ const mutation = graphql`
   }
 `;
 
-export const CreateBookForm = ({ onClose }: FormProps) => {
+const CreateBookForm = ({ onClose }: FormProps) => {
   const { handleSubmit, reset, control } = useForm<FormSchema>({
     defaultValues: {
       title: '',
@@ -106,3 +106,5 @@ export const CreateBookForm = ({ onClose }: FormProps) => {
     </form>
   );
 };
+
+export default CreateBookForm;

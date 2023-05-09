@@ -7,7 +7,7 @@ import {
   ModalContent,
 } from '@chakra-ui/react';
 
-import { CreateBookForm } from './CreateBookForm';
+import CreateBookForm from '../CreateBookForm/CreateBookForm';
 
 type CreateBookModalProps = {
   isOpen: boolean;
@@ -28,3 +28,5 @@ export const CreateBookModal = ({ isOpen, onClose }: CreateBookModalProps) => {
     </Modal>
   );
 };
+
+export default CreateBookModal;
