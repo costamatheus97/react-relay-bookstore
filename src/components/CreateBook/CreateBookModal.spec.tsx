@@ -5,6 +5,7 @@ import { RelayEnvironmentProvider } from 'react-relay/hooks';
 import { createMockEnvironment } from 'relay-test-utils';
 import { vi } from 'vitest';
 
+// @ts-ignore
 global.jest = vi;
 
 describe('CreateBookModal', () => {
