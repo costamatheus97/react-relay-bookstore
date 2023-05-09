@@ -2,7 +2,7 @@
 
 This repository contains the frontend codebase for an application built with Relay, React and Vite. The application uses the Relay framework to manage data fetching and state management, and Vite as the development server and build tool.
 
-You can access it online in [here](!https://react-relay-bookstore.vercel.app/)
+You can access it online in [here](https://react-relay-bookstore.vercel.app/)
 
 ## Getting Started
 
