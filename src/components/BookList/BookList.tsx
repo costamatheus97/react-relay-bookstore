@@ -27,7 +27,7 @@ export const BookList: React.FC = () => {
     <Box w={'100%'} p={8}>
       <VStack spacing={8} align="start" width={'100%'} alignItems={'center'}>
         {data.getBooks?.length ? (
-          <SimpleGrid columns={[1, null, 2]} spacing={10} mt={6}>
+          <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing={10} mt={6}>
             {data.getBooks.map(
               (book: any) =>
                 book && <BookListItem key={book.id} book={book!} />,
