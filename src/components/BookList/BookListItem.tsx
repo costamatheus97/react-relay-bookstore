@@ -35,10 +35,10 @@ const BookListItem = ({ book }: BookItemProps) => {
         variables: {
           input: id,
         },
-        updater: (store) => {
+        updater: (store: any) => {
           const root = store.getRoot();
           const books = root.getLinkedRecords('getBooks');
-          const newBooks = books.filter((book) => book.getDataID() !== id);
+          const newBooks = books.filter((book: any) => book.getDataID() !== id);
           root.setLinkedRecords(newBooks, 'getBooks');
         },
       });
